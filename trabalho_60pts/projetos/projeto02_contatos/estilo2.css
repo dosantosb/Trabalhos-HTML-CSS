@@ -1,0 +1,61 @@
+html, body {
+    height: 100%; /* Define a altura de `html` e `body` como 100%, garantindo que ocupem toda a altura da tela. */
+}
+
+body {
+    background-color: rgb(17, 17, 17); /* Define a cor de fundo do `body` como azul-ciano usando RGB. */
+    margin: 0; /* Define a margem do corpo como zero, removendo o espaço em torno do corpo. */
+    padding: 0; /* Define o preenchimento interno do corpo como zero, removendo o espaço dentro do corpo. */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define a fonte padrão do documento usando uma lista de famílias de fontes. */
+
+    display: flex; /* Permite o uso de layout flexível, centralizando o conteúdo (h1 e 'list-wrapper'). */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do corpo. */
+    align-items: center; /* Centraliza verticalmente o conteúdo do corpo. */
+    flex-direction: column; /* Orienta o conteúdo em uma coluna. */
+}
+
+.main-title {
+    color: #dee4e4; /* Define a cor do título principal (h1) como um tom de azul-cinza. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+.list {
+    width: 90%; /* Define a largura da lista como 90% da largura da tela. */
+    max-width: 960px; /* Define a largura máxima da lista como 960 pixels. */
+    display: flex; /* Aplica layout flexível à lista para melhor organização dos itens. */
+    flex-wrap: wrap; /* Permite que os itens da lista se quebrem em várias linhas, se necessário. */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente. */
+    gap: 16px; /* Define o espaçamento entre os itens da lista como 16px. */
+    list-style-type: none; /* Remove as marcações padrão dos itens da lista (ul). */
+}
+
+.list-item {
+    flex-basis: 280px; /* Define a largura básica dos itens da lista como 280 pixels. */
+    background-color: white; /* Define a cor de fundo dos itens da lista como branca. */
+    border-radius: 5px; /* Arredonda os cantos dos itens da lista. */
+    text-align: center; /* Centraliza o texto dentro dos itens da lista. */
+    box-shadow: 0 2px 8px; /* Adiciona uma sombra ao item para destacar. */
+    background-image: url(imagens/thumb02.jpg); /* Define uma imagem de fundo para o item. */
+    background-size: 100%; /* Faz com que a imagem de fundo ocupe 100% da largura do item. */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo. */
+}
+
+.list-item__imagem img {
+    border-radius: 50%; /* Torna as imagens redondas para melhor visualização. */
+    width: 80px; /* Define a largura das imagens como 80 pixels. */
+    margin-top: 120px; /* Adiciona um espaçamento superior para posicionar as imagens. */
+}
+
+.list-item__name {
+    margin: 0; /* Remove as margens do nome do contato. */
+    font-size: 24px; /* Define o tamanho da fonte como 24px para destaque. */
+    color: #385555; /* Define a cor do nome como um tom de azul-cinza. */
+}
+
+.list-item__action {
+    display: flex; /* Aplica layout flexível à seção de ações dos itens. */
+    background-color: #e5e5e5; /* Define a cor de fundo como um cinza claro. */
+    padding: 16px; /* Define o preenchimento interno como 16px para espaçamento. */
+    justify-content: space-evenly; /* Distribui as ações uniformemente ao longo do espaço disponível. */
+}

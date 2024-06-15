@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(0, 217, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex; /*Ele que centraliza meu conteúdo ('h1) e 'list-wrapper'*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*coloca o canteúdo em coluna*/
+}
+
+.main-title {
+    color: #385555;
+}
+
+.list-wrapper {
+    background-color: white;
+    width: 90%;
+    max-width: 500px; /*maximo de largura*/
+    max-height: 400px; /*maximo de altura*/
+    overflow-y: auto; /*Colocar barra de rolagem na vertical*/
+    border-radius: 5px; /*Borda arredondada*/ 
+    box-shadow: 0 /*sem deslocamento horizontal*/ 2px /*pequeno deslocamento na vertical*/ 6px /*um pouco de esfumaçamento*/ rgba(0,0,0, .2);
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 16px; /* Adiciona espaço entre os itens */
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha separadora entre os itens */
+    transition: opacity 0.3s; /* Transição suave para a opacidade */
+}
+
+.list-item:hover {
+    background-color: #e8e8e8;
+}
+
+.list-item__imagem img {
+    width: 80px;
+    border-radius: 50%; 
+}
+
+.list-item__content {
+    padding: 0 20px; /*espaçamento entro o img e o p*/
+    flex-grow: 1; /* Permite que o conteúdo cresça para ocupar o espaço restante */
+}
+
+.list-item__name {
+    font-size: 24px;
+    color: #385555;
+    margin: 0;
+}
+
+.list-item__content p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Organiza o nome e o email em coluna */
+    align-items: flex-start;
+}
+
+.list-item__email {
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+.list-item__action {
+    /*display: none; /* Oculta as ações por padrão */
+    gap: 12px;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__action {
+    opacity: 0.4;
+    /*display: flex; /* Mostra as ações quando o mouse passa sobre o item */
+}
+
+
+
+
+
+
+

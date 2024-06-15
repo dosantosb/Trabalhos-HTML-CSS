@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+#sobre-mim {
+    background: #f4f4f4;
+}
+
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(50% - 2rem); /* Set width to 50% minus margin */
+    max-width: calc(50% - 2rem); /* Ensure the maximum width matches */
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Limite de altura para imagens */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 1rem auto; /* Centraliza a imagem e adiciona espaçamento inferior */
+}
+
+.projeto.central {
+    width: calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+}
+
+#contato {
+    background: #f4f4f4;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .projeto, .projeto.central {
+        width: calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto, .projeto.central {
+        width: calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+    }
+}

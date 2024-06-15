@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(243, 240, 240);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    margin: 140px; /* Adiciona espaço de 50px em cima e embaixo, e 20% nas laterais */
+    width: 60%;
+    max-width: 200px;
+    border-radius: 10px;
+    transition: background 0.5s ease; /* Transição suave para o efeito de hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+h1 {
+    font-size: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    
+}
+
+h2 {
+    
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #111111;
+    color: white;
+    width: auto; /* Define largura automática para <h2> para ajustar ao texto */
+    border-radius: 7px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* Contêiner para centralizar o cabeçalho <h2> */
+.h2-container {
+    display: flex;
+    justify-content: center; /* Centraliza o cabeçalho <h2> */
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    text-align: center;
+}
+
+.input-email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    margin: 10px 0; /* Adiciona espaço acima e abaixo dos elementos */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam considerados no cálculo da largura *
+    border: 1px solid #111111; /* Estiliza a borda do campo de entrada */
+    text-align: center;
+}
+
+.input-senha {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    margin: 10px 0; /* Adiciona espaço acima e abaixo dos elementos */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam considerados no cálculo da largura *
+    border: 1px solid #111111; /* Estiliza a borda do campo de entrada */
+    text-align: center;
+    border: 1px solid #111111; /* Estiliza a borda do campo de entrada */
+}
+
+/* Definição das cores do gradiente */
+:root {
+    --cor-azul-claro: #85e9ff; /* Azul claro brilhante */
+    --cor-roxo-brilhante: #b08cff; /* Roxo brilhante */
+}
+
+.btn-login {
+    background: linear-gradient(to bottom, var(--cor-azul-claro), var(--cor-roxo-brilhante));
+    transition: background 0.5s ease; /* Transição suave para o efeito de hover */
+    width: 100%; /* Largura do botão */
+    padding: 10px; /* Adiciona espaço interno ao botão */
+    margin-bottom: 20px;
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar sobre o botão */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    border-radius: 25px; /* Adiciona cantos arredondados */
+}
+
+.btn-login:hover {
+    background: linear-gradient(to bottom, var(--cor-roxo-brilhante), var(--cor-azul-claro)); /* Inverte as cores do gradiente */
+}
+
+.container-rodape {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 100px;
+    margin: 10px 0; /* Adiciona espaço acima e abaixo dos elementos */
+    width: 100%; /* Define a largura do rodapé para 100% da largura do contêiner */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    
+}
